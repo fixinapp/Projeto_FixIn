@@ -21,11 +21,11 @@ public class Cliente {
     // Objeto LocalDate responsável por armazenar a data de nascimento do cliente
     private LocalDate clienteDataNascimento;
 
-    // ArrayList de objetos Endereco declarado como "clienteEndereco"
+    // ArrayList de objetos "Endereco" declarado como "clienteEndereco"
     // responsável por armazenar os possíveis endereços cadastrados pelo cliente
     private ArrayList<Endereco> clienteEndereco = new ArrayList<Endereco>();
 
-    // ArrayList de objetos Classificacao declarado como "clienteAval"
+    // ArrayList de objetos "Classificacao" declarado como "clienteAval"
     // responsável por armazenar as possíveis avaliações recebidas pelo cliente
     private ArrayList<Classificacao> clienteAval = new ArrayList<Classificacao>();
 
@@ -79,9 +79,7 @@ public class Cliente {
 
     // Método para remover endereço "indiceRemover" do cliente
     public void removerEndereco (int indiceRemover) {
-        if (indiceRemover < clienteEndereco.size()){
-            clienteEndereco.remove(indiceRemover);
-        }
+        clienteEndereco.remove(indiceRemover);
     }
 
     // Método para adicionar avaliação ao cliente por meio dos argumentos recebidos
@@ -91,9 +89,7 @@ public class Cliente {
 
     // Método para remover avaliação "indiceRemover" do cliente
     public void removerAval(int indiceRemover) {
-        if (indiceRemover < clienteAval.size()){
-            clienteAval.remove(indiceRemover);
-        }
+        clienteAval.remove(indiceRemover);
     }
 
     // ################################################################################### //
@@ -135,7 +131,7 @@ public class Cliente {
         }
     }
 
-    // Método para mostrar a avaliação de "indiceMostrar"
+    // Método para mostrar a avaliação de indice "indiceMostrar" do cliente
     public void mostrarAval(int indiceMostrar) {
         // Definindo o tipo de formatação para o objeto LocalDate
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd LLLL yyyy");
@@ -186,7 +182,7 @@ public class Cliente {
         }
     }
 
-    // Método para mostrar todos as avaliações armazenadas
+    // Método para mostrar todas as avaliações armazenadas
     public void mostrarTodosAval() {
         // Caso ainda não haja avaliação
         if (clienteAval.size() <= 0) {
