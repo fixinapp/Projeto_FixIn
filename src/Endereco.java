@@ -7,7 +7,7 @@ public class Endereco {
     // Variável responsável por armazenar o cep do endereço
     private int numeroCep;
 
-    // Variável responsável por armazenar o nome da rua do edenreço
+    // Variável responsável por armazenar o nome da rua do endereço
     private String nomeRua;
 
     // Variável responsável por armazenar o número do endereço

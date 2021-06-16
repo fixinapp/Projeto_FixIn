@@ -16,8 +16,13 @@ public class BancoDados {
     // gerenciar o banco de cadastro de profissionais
     HashMap<Integer,Profissional> profCadastros = new HashMap<Integer,Profissional>();
 
-    // Método construtor da classe "BancoDados"
+
+    // ###################### Método Construtor da Classe "Cliente" ###################### //
+
     public BancoDados() {}
+
+    // ################################################################################### //
+
 
     // ###################### Métodos de manipulação da Classe "BancoDados" ###################### //
 
@@ -145,7 +150,7 @@ public class BancoDados {
         // Laço percorrendo cada cliente cadastrado presente em "clienteCadastros"
         for (int indiceCliente: clienteCadastros.keySet()) {
             // Caso a média do cliente "indiceCliente" seja maior ou igual a "valorMediaCliente"
-            if (Double.parseDouble(clienteCadastros.get(indiceCliente).getMediaAvaliacao()) >= valorMediaCliente) {
+            if (Double.parseDouble(clienteCadastros.get(indiceCliente).getMediaAvaliacao().replace(",",".")) >= valorMediaCliente) {
                 // Apresenta o cabeçalho do cliente
                 clienteCadastros.get(indiceCliente).mostrarCabecalhoCliente();
                 System.out.println();
@@ -269,7 +274,7 @@ public class BancoDados {
         // Laço percorrendo cada profissional cadastrado presente em "profCadastros"
         for (int indiceProf: profCadastros.keySet()) {
             // Caso a média do cliente "indiceProf" seja maior ou igual a "valorMediaProf"
-            if (Double.parseDouble(profCadastros.get(indiceProf).getMediaAvaliacao()) >= valorMediaProf) {
+            if (Double.parseDouble(profCadastros.get(indiceProf).getMediaAvaliacao().replace(",",".")) >= valorMediaProf) {
                 // Apresenta o cabeçalho do profissional
                 profCadastros.get(indiceProf).mostrarCabecalhoProf();
                 System.out.println();

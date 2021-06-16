@@ -21,7 +21,7 @@ public class Main {
         // Populando o banco de dados com N cadastros aleatórios de profissionais
         simulacao.randomProf(perfisCadastrados, 10);
 
-
+/*
         // Exemplo de como buscar a ficha resumida de todos os clientes cadastrados
         System.out.println("################################### Todos Clientes Cadastrados [Resumido] ###################################");
 
@@ -32,9 +32,9 @@ public class Main {
         }
         System.out.println("########################################################################################################################");
         System.out.println();
+*/
 
-
-
+/*
         // Exemplo de como buscar a ficha completa de todos os clientes cadastrados
         System.out.println("################################### Todos Clientes Cadastrados [Completo] ###################################");
 
@@ -45,7 +45,7 @@ public class Main {
         }
         System.out.println("########################################################################################################################");
         System.out.println();
-
+*/
 
 /*
         // Exemplo de como buscar a ficha resumida de todos os profissionais cadastrados
@@ -60,7 +60,7 @@ public class Main {
         System.out.println();
 */
 
-
+/*
         System.out.println("################################### Todos Profissionais Cadastrados [Completo] ###################################");
 
         // Percorre todos os profissionais cadastrados
@@ -70,7 +70,7 @@ public class Main {
         }
         System.out.println("########################################################################################################################");
         System.out.println();
-
+*/
 
 /*
         // Exemplo de busca por clientes na cidade Rolândia
@@ -121,16 +121,16 @@ public class Main {
 */
 
 /*
-        // Exemplo de busca por clientes com media de avaliação acima de 3 estrelas
-        System.out.println("################################### Clientes com media acima de: 3 Estrelas ###################################");
+        // Exemplo de busca por clientes com média de avaliação acima de 3 estrelas
+        System.out.println("################################### Clientes com média acima de: 3 Estrelas ###################################");
         perfisCadastrados.buscaMediaAvalCliente(3);
         System.out.println("########################################################################################################################");
         System.out.println();
 */
 
 /*
-        // Exemplo de busca por profissionais com media de avaliação acima de 4 estrelas
-        System.out.println("################################### Profissionais com media acima de: 4 Estrelas ###################################");
+        // Exemplo de busca por profissionais com média de avaliação acima de 4 estrelas
+        System.out.println("################################### Profissionais com média acima de: 4 Estrelas ###################################");
         perfisCadastrados.buscaMediaAvalProf(4);
         System.out.println("########################################################################################################################");
         System.out.println();

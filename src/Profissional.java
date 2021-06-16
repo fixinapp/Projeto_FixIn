@@ -106,11 +106,9 @@ public class Profissional {
         profEndereco.get(i).setEstado(estado);
     }
 
-    // Método para remover endereço "indiceRemover" do cliente
+    // Método para remover endereço "indiceRemover" do profissional
     public void removerEndereco(int indiceRemover) {
-        if (indiceRemover < profEndereco.size()){
-            profEndereco.remove(indiceRemover);
-        }
+        profEndereco.remove(indiceRemover);
     }
 
     // Método para adicionar avaliação ao profissional por meio dos argumentos recebidos
@@ -120,9 +118,7 @@ public class Profissional {
 
     // Método para remover avaliação "indiceRemover" do profissional
     public void removerAval(int indiceRemover) {
-        if (indiceRemover < profAval.size()){
-            profAval.remove(indiceRemover);
-        }
+        profAval.remove(indiceRemover);
     }
 
     // Métodos para adicionar o pagamento de "pagamentosDisponiveis" com indice "indicePagamento"
@@ -261,13 +257,13 @@ public class Profissional {
         }
     }
 
-    // Método para mostrar todos as avaliações armazenadas
+    // Método para mostrar todas as avaliações armazenadas
     public void mostrarTodosAval() {
         // Caso ainda não haja avaliação
         if (profAval.size() <= 0) {
             System.out.println("Nenhuma avaliação para ser mostrada.");
         } else {
-            // Laço que percorre todos as avaliações cadastradas em "profAval"
+            // Laço que percorre todas as avaliações cadastradas em "profAval"
             for (int i = 0; i < profAval.size(); i++) {
                 mostrarAval(i);
             }
